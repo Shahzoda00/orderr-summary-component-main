@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  background: #e0e8ff;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.inner-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 24px;
+}
+
+.card-wrapper {
+  background-color: white;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.container-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 44px;
+}
+
+.title {
+  text-transform: capitalize;
+  color: #1f2e55;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.descreption {
+  color: #717fa6;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 11px;
+  background: #f7f9ff;
+  width: 100%;
+  gap: 5px;
+  padding: 24px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.next {
+  color: #382ae1;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  display: flex;
+  align-items: center;
+}
+
+.button{
+  font-family: Red Hat Display;
+  font-weight: 900;
+  padding: 15px;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+
+}
+.pay-button {
+  width: 100%;
+  font-size: 15px;
+  color: white;
+  background: #382ae1;
+}
+
+.pay-button:hover {
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.cancel-button {
+  width: fit-content;
+  font-size: 15px;
+  color: #717fa6;
+  margin: 0 auto;
+}
+.cancel-button:hover{
+  text-decoration: underline;
+}
+
+.attribution {
+  padding-top: 15px;
+}
+
+@media screen and (min-width:568px) {
+  section {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+
+  .wrapper {
+    padding: 32px;
+  }
+
+  .pay-button{
+    max-width: 100%;
+    font-size: 22px;
+  }
+}
